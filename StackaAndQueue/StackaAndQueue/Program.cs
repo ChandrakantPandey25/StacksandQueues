@@ -10,6 +10,7 @@ namespace StackaAndQueue
             Console.WriteLine("Enter 1 to create stack");
             Console.WriteLine("Enter 2 for Pick and Pop from stack");
             Console.WriteLine("Enter 3 to create a queue");
+            Console.WriteLine("Enter 4 to dequeue from begining");
             switch(Convert.ToInt32(Console.ReadLine()))
             {
                 case 1:
@@ -33,6 +34,14 @@ namespace StackaAndQueue
                     queue.Enqueue(30);
                     queue.Enqueue(70);
                     queue.Display();
+                    break;
+                case 4:
+                    DequeueBegining dequeue = new DequeueBegining();
+                    dequeue.Enqueue(56);
+                    dequeue.Enqueue(30);
+                    dequeue.Enqueue(70);
+                    dequeue.Dequeue();
+                    dequeue.Display();
                     break;
                 default:
                     Console.WriteLine("Enter Valid number");

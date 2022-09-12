@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StackaAndQueue
 {
-    class CreatingQueue
+    public class LinkedListQueue
     {
         Node head = null;
         internal void Enqueue(int data)
@@ -25,13 +25,14 @@ namespace StackaAndQueue
         }
         public void Display()
         {
-            if (head == null)
+            Node temp = this.head;
+            if (temp == null)
             {
                 Console.WriteLine("Queue is Empty");
+                return;
             }
             else
-            {
-                Node temp = head;
+            {                
                 while (temp.next != null)
                 {
                     Console.Write(temp.data + " ");

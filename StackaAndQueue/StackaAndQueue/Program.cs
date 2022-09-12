@@ -28,11 +28,11 @@ namespace StackaAndQueue
                     peak.Display();
                     break;
                 case 3:
-                    CreatingQueue queue = new CreatingQueue();
-                    queue.Enqueue(56);
-                    queue.Enqueue(30);
-                    queue.Enqueue(70);
-                    queue.Display();
+                    LinkedListQueue linkedListQueue = new LinkedListQueue();
+                    linkedListQueue.Enqueue(56);
+                    linkedListQueue.Enqueue(30);
+                    linkedListQueue.Enqueue(70);
+                    linkedListQueue.Display();
                     break;
                 default:
                     Console.WriteLine("Enter Valid number");

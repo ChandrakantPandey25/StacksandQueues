@@ -4,10 +4,10 @@ using System.Text;
 
 namespace StackaAndQueue
 {
-    class PickAndPop
+    class PeekAndPop
     {
         private Node top;
-        public PickAndPop()
+        public PeekAndPop()
         {
             this.top = null;
         }
@@ -21,7 +21,7 @@ namespace StackaAndQueue
             this.top = node;
             Console.WriteLine("{0} pushed to stack ", value);
         }
-        public void Peak()
+        public void Peek()
         {
             if (this.top == null)
             {
@@ -44,7 +44,7 @@ namespace StackaAndQueue
         {
             while (this.top != null)
             {
-                Peak();
+                Peek();
                 Pop();
             }
             Console.WriteLine("Stack is empty now.");

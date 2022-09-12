@@ -19,12 +19,16 @@ namespace StackaAndQueue
                     list.Display();
                     break;
                 case 2:
-                    PickAndPop peak = new PickAndPop();
-                    peak.Push(70);
-                    peak.Push(30);
-                    peak.Push(56);
-                    peak.IsEmpty();
-                    peak.Display();
+                    PeekAndPop stack = new PeekAndPop();
+                    stack.Push(70);
+                    stack.Push(30);
+                    stack.Push(56);                
+                    
+                    stack.Display();
+                    stack.Peek();
+                    stack.Pop();
+                    stack.Display();
+                    stack.IsEmpty();
                     break;
                 default:
                     Console.WriteLine("Enter Valid number");

@@ -4,10 +4,10 @@ using System.Text;
 
 namespace StackaAndQueue
 {
-    public class LinkedList
+    public class LinkedListStack
     {
         private Node top;
-        public LinkedList()
+        public LinkedListStack()
         {
             this.top = null;
         }
@@ -15,9 +15,13 @@ namespace StackaAndQueue
         {
             Node node = new Node(value);
             if (this.top == null)
+            {
                 node.next = null;
+            }
             else
+            {
                 node.next = this.top;
+            }
             this.top = node;
             Console.WriteLine("{0} pushed to stack ", value);
         }

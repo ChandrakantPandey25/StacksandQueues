@@ -7,7 +7,7 @@ namespace StackaAndQueue
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Stacks and Queues program");
-            LinkedList list = new LinkedList();            
+            LinkedListStack list = new LinkedListStack();            
             list.Push(70);
             list.Push(30);
             list.Push(56);
